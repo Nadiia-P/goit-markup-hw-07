@@ -1,11 +1,13 @@
 @import './base/fonts';
+@import './utils/vars';
+@import './base/normalize';
 @import './base/base';
 @import './base/reset';
-@import './utils/vars';
+
 @import './utils/vis-hidden';
 
-@import './components/container';
 @import './components/section';
+@import './components/container';
 @import './components/section-title';
 
 @import './components/backdrop';
