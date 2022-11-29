@@ -1,8 +1,6 @@
 .button {
-  display: flex;
+  @include flex();
   gap: 10px;
-  justify-content: center;
-  align-items: center;
   font-family: inherit;
   font-size: var(--fs-secondary);
   font-weight: var(--fw-button);

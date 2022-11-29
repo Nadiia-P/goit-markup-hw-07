@@ -1,6 +1,5 @@
 .filters {
-  display: flex;
-  justify-content: center;
+  @include flex();
   gap: 8px;
   margin-bottom: 50px;
 

@@ -5,9 +5,8 @@
 
 .header-nav {
   margin-left: 93px;
-  display: flex;
+  @include flex(center, baseline);
   gap: 50px;
-  align-items: baseline;
 
   &__link {
     color: var(--txt-clr-title);
@@ -23,16 +22,14 @@
 }
 
 .header-contacts {
-  display: flex;
-  align-items: center;
+  @include flex();
   gap: 50px;
   margin-left: auto;
 
   &__link {
     color: var(--txt-clr-main);
     font-weight: var(--fw-medium);
-    display: inline-flex;
-    align-items: center;
+    @include flex();
     gap: 10px;
     transition: color var(--trans-func);
   }
