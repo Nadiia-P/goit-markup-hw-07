@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -26,7 +27,7 @@
 
     <header class="header">
       <div class="container container--header">
-        <a href="./index.html" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+        <a href="./index.html" class="logo logo--header"><span class="logo__accent">Web</span>Studio</a>
         <nav>
           <ul class="header-nav">
             <li>
@@ -65,8 +66,8 @@
     <main>
 
       <!-- STUDIO MAIN.HERO -->
-      <section class="section section--hero">
-        <div class="container">
+      <section class="section hero">
+        <div class="container container--hero">
           <h1 class="hero__title">ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
@@ -412,12 +413,12 @@
 <!-- FOOTER.CONTACTS -->
 
       <div>
-        <a href="./index.html" class="logo footer__logo"><span class="logo__accent">Web</span>Studio</a>
+        <a href="./index.html" class="logo logo--footer"><span class="logo__accent">Web</span>Studio</a>
         <address>
           <ul class="footer-contacts">
             <li class="footer-contacts__item">
               <a
-                class="footer-contacts__link footer-contacts__link--address"
+                class="footer-contacts__link  footer-contacts__link--address"
                 href="https://goo.gl/maps/ifu1UcrwGc2GNokw5"
                 target="_blank"
                 rel="noopener nofollow  noreferrer"
@@ -504,17 +505,17 @@
             </svg>
           </button>
           <form class="form" name="form">
-            <div class="form__group" role="group"    aria-labelledby="form__title">
+            <div class="form__wraper" role="group"    aria-labelledby="form__title">
               <strong class="form__title" id="form__title">Залиште свої дані, ми вам зателефонуємо</strong>
               <label class="form__label" for="name" >Ім'я</label>  
-              <div class="form__wrapper">
+              <div class="form__input-group">
                 <input class="form__input" name='user-name' id='name' type="text" minlength="5">
                 <svg class="form__icon">
                   <use href="images/icons.svg#icon-user-name"></use>
                 </svg>
               </div>
               <label class="form__label" for="phone" >Телефон</label>  
-              <div class="form__wrapper">
+              <div class="form__input-group">
                 <input class="form__input" name='user-phone' id='phone' type="tel">
                 <svg class="form__icon">
                   <use href="images/icons.svg#icon-user-phone"></use>
@@ -522,7 +523,7 @@
               </div>
 
               <label class="form__label" for="email">Пошта</label>  
-              <div class="form__wrapper">
+              <div class="form__input-group">
                 <input class="form__input" name='user-email' id='email' type="email">
                 <svg class="form__icon">
                   <use href="images/icons.svg#icon-user-email"></use>
@@ -530,7 +531,7 @@
               </div>
 
               <label class="form__label" for="message" >Коментар</label>  
-              <div class="form__wrapper">
+              <div class="form__input-group">
                 <textarea class="form__message" name='user-message' id='message' rows="6" placeholder="Введіть текст"></textarea>
               </div>
             </div>

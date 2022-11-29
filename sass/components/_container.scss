@@ -1,0 +1,21 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--header {
+    display: flex;
+    align-items: center;
+  }
+
+  &--footer {
+    display: flex;
+    align-items: baseline;
+    gap: 93px;
+  }
+
+  &--hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
